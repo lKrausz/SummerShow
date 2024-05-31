@@ -4763,7 +4763,76 @@ p {
 #ttsmartblog {
   width: 100%;
   padding-bottom: 80px;
+  /* background: url(../img/tropicalBG.png);
+  background-repeat: no-repeat;
+  background-size: contain; */
 }
+
+#ttsmartblog .animationBG {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 400px;
+  height: 400px;
+  background: url(../img/drink.png) no-repeat center center;
+  background-size: contain;
+  animation: move 5s linear infinite;
+  z-index: 60;
+}
+
+#ttsmartblog .animationBG2 {
+  position: absolute;
+  bottom: 270px;
+  right: 40px;
+  width: 250px;
+  height: 250px;
+  background: url(../img/drink2.png) no-repeat center center;
+  background-size: contain;
+  animation: move2 5s linear infinite;
+  z-index: 40;
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(0turn);
+  }
+  25% {
+    transform: rotate(-0.05turn) scale(1.2);
+  }
+  
+  50% {
+    transform: rotate(0turn);
+  }
+  
+  75% {
+    transform: rotate(0.05turn) scale(0.8);
+  }
+  100% {
+    transform: rotate(0turn);
+  }
+}
+
+
+@keyframes move2 {
+  0% {
+    transform: rotate(0turn);
+  }
+  25% {
+    transform: rotate(0.05turn) scale(0.8);
+  }
+  
+  50% {
+    transform: rotate(0turn);
+  }
+  
+  75% {
+    transform: rotate(-0.05turn) scale(1.2);
+  }
+  100% {
+    transform: rotate(0turn);
+  }
+}
+
 @media (max-width: 543px) {
   #ttsmartblog {
     margin: 15px 0;
