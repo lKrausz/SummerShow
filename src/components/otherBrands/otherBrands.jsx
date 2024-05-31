@@ -138,6 +138,7 @@ function OtherBrands({
         <div id="ttsmartblog" className="style2 my-40 my-sm-25">
           <div className="tt-title d-inline-block float-none w-100 text-center text-capitalize">{t("Joker's New Favorites: Fresh and Exciting Casinos")}</div>
           <div className="container">
+          <div className="palmAnimation"></div>
             <div className="smartblog-content row">
               {otherData.length > 0 ? (
                 otherData.map((rowData, index) => (

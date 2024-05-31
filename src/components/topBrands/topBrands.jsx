@@ -173,7 +173,7 @@ function TopBrands({
   return (
     <div>
       {data.length > 0 && (
-        <div id="ttsmartblog" className="style2 my-40 my-sm-25">
+        <div id="ttsmartblog" className="style2 my-40 my-sm-25 otherBrands">
           <div className="tt-title d-inline-block float-none w-100 text-center text-capitalize">{t("Summer is coming! Fresh and Exciting Casinos are waiting! ")}</div>
           <div className="container">
             <div className="animationBG"></div>

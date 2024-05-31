@@ -4768,7 +4768,7 @@ p {
   background-size: contain; */
 }
 
-#ttsmartblog .animationBG {
+/* #ttsmartblog .animationBG {
   position: absolute;
   bottom: 40px;
   right: 40px;
@@ -4777,7 +4777,7 @@ p {
   background: url(../img/drink.png) no-repeat center center;
   background-size: contain;
   animation: move 5s linear infinite;
-  z-index: 60;
+  z-index: -1;
 }
 
 #ttsmartblog .animationBG2 {
@@ -4789,7 +4789,7 @@ p {
   background: url(../img/drink2.png) no-repeat center center;
   background-size: contain;
   animation: move2 5s linear infinite;
-  z-index: 40;
+  z-index: -1;
 }
 
 @keyframes move {
@@ -4832,6 +4832,40 @@ p {
     transform: rotate(0turn);
   }
 }
+
+.otherBrands .palmAnimation {
+  position: absolute;
+  bottom: 270px;
+  left: 40px;
+  width: 500px;
+  height: 500px;
+  background: url(../img/palm.png) no-repeat center center;
+  background-size: contain;
+  animation: move3 5s linear infinite;
+  z-index: -1;
+}
+
+@keyframes move3 {
+  0% {
+    transform: rotate(0turn);
+  }
+  25% {
+    transform: rotate(0.05turn) scale(0.8);
+  }
+  
+  50% {
+    transform: rotate(0turn);
+  }
+  
+  75% {
+    transform: rotate(-0.05turn) scale(1.2);
+  }
+  100% {
+    transform: rotate(0turn);
+  }
+} */
+
+
 
 @media (max-width: 543px) {
   #ttsmartblog {
