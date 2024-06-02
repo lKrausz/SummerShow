@@ -173,14 +173,14 @@ function TopBrands({
   return (
     <div>
       {data.length > 0 && (
-        <div id="ttsmartblog" className="style2 my-40 my-sm-25 otherBrands">
-          <div className="tt-title d-inline-block float-none w-100 text-center text-capitalize">{t("Summer is coming! Fresh and Exciting Casinos are waiting! ")}</div>
+        <div id="ttsmartblog" className="style2 otherBrands">
+          <div className="tt-title d-inline-block float-none w-100 text-center">{t("Summer is coming! Fresh and Exciting Casinos are waiting! ")}</div>
           <div className="container">
             <div className="animationBG"></div>
             <div className="animationBG2"></div>
             <div className="smartblog-content row">
               {data.map((rowData, index) => (
-                <div className="ttblog  col-xl-3 col-lg-3">
+                <div className="ttblog  col-xl-3 col-lg-3 col-sm-6">
                   <div className="item">
                     <div className="ttblog_image_holder">
                       <a href={
