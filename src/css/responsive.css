@@ -192,10 +192,6 @@
     width: 50%;
   }
 
-  h1,
-  h1 .common-gre-color {
-    font-size: 36px !important;
-  }
   .cards-content {
     display: flex;
     flex-wrap: wrap;

@@ -48,14 +48,15 @@
   --box-shadow: 1px 1px 15px 0px rgba(255, 201, 39, 0.513), 1px 1px 15px 0px rgba(255, 81, 1, 0.39);
   --border: 1px solid rgba(255, 115, 0, 0.144); */
 
-  --header-background-color: linear-gradient(180deg, rgba(121,109,45,0.7903536414565826) 11%, #dfcd9c 88%);
-  --background-color: #dfcd9c;
-  --footer-background-color: linear-gradient(0deg, rgba(121,109,45,0.5) 11%, #dfcd9c63 88%);
+  --header-background-color: #dfa388;
+  --background-color: #f6844f8a;
+  --footer-background-color: linear-gradient(0deg, #f6844f8a 11%, #f6844f00 88%);
   
   --button-line_color: #464646;
   --button-back_color: #fffbe7;
   /* --radial: radial-gradient(#968768, #968768, #968768); */
   --header-font-color: #000000;
+  --font-color: #fff ;
   --second-color: #942a00;
   --darker-second-color: #685e09;
   --pragraph-color: #494949;  
@@ -389,7 +390,7 @@ body {
   font-weight: 400;
   font-style: normal;
   color: #ffffff;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 * {
@@ -840,10 +841,12 @@ img {
   z-index: 1;
   padding: 220px 0 30px;
   text-align: center !important;
-  background-image: url(../img/beach-2.jpg);
+  background-image: url(../img/beachBG-2.png);
   background-size: cover;
-  height: 80vh;
-  background-position: center;
+  height: 1000px;
+  background-repeat: no-repeat;
+
+  background-position: bottom;
 }
 
 .hero-section .button-drawing {
@@ -851,26 +854,14 @@ img {
   border-radius: 30px;
 }
 
-.hero-section .hero-content span {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 100px;
-  font-weight: 800;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .hero-section .hero-content h1 {
   font-size: 150px;
   margin-bottom: 35px;
-  background: var(--gradient);
+  background: var(--font-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: -5px -5px #ff74039d;
   
-}
-
-.hero-section .hero-content p {
-  margin-bottom: 40px;
 }
 
 .hero-content.top-greadient {
@@ -893,96 +884,10 @@ img {
   width: 100%;
 }
 
-.how-item {
-  position: relative;
-}
-
-.how-item-thumb {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 120px;
-  border-radius: 10px;
-  font-size: 46px;
-  margin: 0 30px 15px 0;
-  position: relative;
-  box-shadow: inset 1px 1px 8px 0px rgb(255 200 39 / 40%),
-    inset 1px 1px 8px 0px rgb(255 82 1 / 20%);
-  transition: all 0.3s ease-out 0s;
-}
-
-.how-item-thumb .badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  padding: 7px;
-  line-height: 0.75;
-  font-size: 14px;
-  font-weight: 500;
-  position: absolute;
-  right: -10px;
-  top: 10px;
-  width: 30px;
-  height: 30px;
-  color: #1f1f23 !important;
-}
-
-.how-item:hover .how-item-thumb,
-.how-item-none:hover .how-item-thumb {
-  box-shadow: inset 1px 1px 30px 0px rgba(250, 194, 24, 0.4),
-    inset 1px 1px 30px 0px rgba(246, 93, 21, 0.2);
-}
-
-.how-item-thumb .badge {
-  background: var(--gradient);
-}
-
-.how-item::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0;
-  border: 1px dashed rgba(255, 200, 39, 0.7);
-  top: 60px;
-  left: 50%;
-}
-
-.how-item-content .title {
-  font-size: 12px;
-}
-
-/**** Game CSS ****/
-.game-section {
-  position: relative;
-}
-
-.game-section .single-game {
+.hero-content h4 {
+  font-size: 28px;
   text-align: center;
-  padding: 35px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  box-shadow: inset var(--box-shadow-game);
-  transition: all 0.3s ease-out 0s;
-}
-
-.game-section .single-game:hover {
-  box-shadow: inset var(--box-shadow-game-hover);
-}
-
-.game-section .single-game .game-content h3 {
-  font-size: 24px;
-}
-
-.game-section .single-game .game_thumb p {
-  margin-top: 20px;
-  height: 120px;
-}
-
-.game-section .single-game .game_thumb img {
-  max-width: 200px;
-  width: 100%;
+  text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.829), 0 0 1em rgba(195, 0, 255, 0.603), 0 0 0.2em rgba(255, 0, 128, 0.616);
 }
 
 /**** other-brands CSS ****/
@@ -1037,8 +942,10 @@ h5,
 p {
   color: #fff;
 }
+
 .select-brand.container {
   margin-top: 30px !important;
+  margin-bottom: 40px;
 }
 .App-intro {
   font-size: large;
@@ -1521,10 +1428,7 @@ header {
   background:var(--header-background-color);
 }
 
-header * {
-  color: var(--header-font-color) !important;
-}
-.tickets a {
+.tickets a, .option {
   color: var(--header-font-color) !important;
 }
 .tickets span {
@@ -1541,10 +1445,7 @@ footer {
   background: var(--footer-background-color);
   padding: 10px;
 }
-.hero-content p {
-  font-size: 18px;
-  text-align: left;
-}
+
 .section-title,
 .w-fu {
   width: 100%;
@@ -1774,7 +1675,7 @@ header .container .relative {
   box-shadow: 0px 0px 8px 0px rgba(236, 102, 35, 0.04);
   font-size: 18px;
   font-weight: 900;
-  color: #fff;
+  color: var(--header-font-color);
   border-radius: 12px !important;
   min-width: 162px !important;
   /* cursor: pointer; */
@@ -1788,7 +1689,7 @@ header .container .relative {
 .additional-options .option,
 .additional-options .option a {
   /* display: none; */
-  color: #fff;
+  color: var(--header-font-color);
   text-decoration: none;
   transition: 0.3s;
 }
@@ -1854,7 +1755,6 @@ header .container .relative {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
 }
 .select-brand select {
   background-color: var(--darker-second-color);
@@ -2796,7 +2696,7 @@ body {
   padding: 0;
   margin: 0;
   background: var(--background-color);
-  background-image: url(../img/sand-op.png);
+  /* background-image: url(../img/sand-op.png); */
   /* overflow-x: auto; */
 }
 
