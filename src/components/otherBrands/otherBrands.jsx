@@ -82,8 +82,8 @@ function OtherBrands({
                 rowData["CurrentStatus"] === "Ongoing" &&
                 rowData["CasinoBrand"] !== "Mirax (FS)" &&
                 rowData["CasinoBrand"] !== "Katsubet (FS)" &&
-                rowData["CasinoBrand"] !== "7Bit (FS)" &&
-                rowData["Networks"] === "1"
+                rowData["CasinoBrand"] !== "7Bit (FS)" 
+                // rowData["High_hybrid"] === "1"
             );
           } else {
             filteredDataOther = responseData.brandsNew.filter(
@@ -92,8 +92,8 @@ function OtherBrands({
                 rowData["CurrentStatus"] === "Ongoing" &&
                 rowData["CasinoBrand"] !== "Mirax (FS)" &&
                 rowData["CasinoBrand"] !== "Katsubet (FS)" &&
-                rowData["CasinoBrand"] !== "7Bit (FS)" &&
-                rowData["Networks"] === "1"
+                rowData["CasinoBrand"] !== "7Bit (FS)"
+                // rowData["High_hybrid"] === "1"
             );
           }
           console.log("EE", filteredDataOther)
@@ -136,7 +136,7 @@ function OtherBrands({
     <div>
       {otherData.length > 0 && (
         <div id="ttsmartblog" className="style2 my-40 my-sm-25">
-          <div className="tt-title d-inline-block float-none w-100 text-center">{t("Joker's New Favorites: Fresh and Exciting Casinos")}</div>
+          <div className="tt-title d-inline-block float-none w-100 text-center">{t("Exclusive Summer Specials – Limited Time Only! 🌞⏳")}</div>
           <div className="container">
           <div className="palmAnimation"></div>
             <div className="smartblog-content row">

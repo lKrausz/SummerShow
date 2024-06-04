@@ -99,8 +99,8 @@ function TopBrands({
                 rowData["CurrentStatus"] === "Ongoing" &&
                 rowData["CasinoBrand"] !== "Mirax (FS)" &&
                 rowData["CasinoBrand"] !== "Katsubet (FS)" &&
-                rowData["CasinoBrand"] !== "7Bit (FS)" &&
-                rowData["Networks"] === "1"
+                rowData["CasinoBrand"] !== "7Bit (FS)" 
+                // rowData["High_hybrid"] === "1"
             );
           } else {
             filteredData = responseData.brandsNew.filter(
@@ -109,8 +109,8 @@ function TopBrands({
                 rowData["CurrentStatus"] === "Ongoing" &&
                 rowData["CasinoBrand"] !== "Mirax (FS)" &&
                 rowData["CasinoBrand"] !== "Katsubet (FS)" &&
-                rowData["CasinoBrand"] !== "7Bit (FS)" &&
-                rowData["Networks"] === "1"
+                rowData["CasinoBrand"] !== "7Bit (FS)" 
+                // rowData["High_hybrid"] === "1"
             );
           }
 
@@ -174,7 +174,7 @@ function TopBrands({
     <div>
       {data.length > 0 && (
         <div id="ttsmartblog" className="style2 otherBrands">
-          <div className="tt-title d-inline-block float-none w-100 text-center">{t("Summer is coming! Fresh and Exciting Casinos are waiting! ")}</div>
+          <div className="tt-title d-inline-block float-none w-100 text-center">{t("Summer's Best Casino Bonuses! 🌞✨")}</div>
           <div className="container">
             <div className="animationBG"></div>
             <div className="animationBG2"></div>
