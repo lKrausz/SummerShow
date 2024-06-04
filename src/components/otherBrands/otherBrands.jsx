@@ -109,7 +109,7 @@ function OtherBrands({
             setIsShuffled(true);
           }
 
-          setOtherData(showData(filteredDataOther));
+          setOtherData(showData(filteredDataOther.slice(8)));
           setLoading(false);
 
           // Если нет брендов, вызывать setSelectedCountry

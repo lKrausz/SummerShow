@@ -134,7 +134,7 @@ function TopBrands({
           });
 
           // Перемешиваем данные перед отображением
-          if (isShuffled) {
+          if (!isShuffled) {
             for (let i = filteredDataWithTopData.length - 1; i > 0; i--) {
               const j = Math.floor(Math.random() * (i + 1));
               [filteredDataWithTopData[i], filteredDataWithTopData[j]] = [
@@ -144,7 +144,7 @@ function TopBrands({
             }
             setIsShuffled(true);
           }
-          setData(showData(filteredDataWithTopData));
+          setData(showData(filteredDataWithTopData.slice(0,8)));
 
           setTopData([...topData]);
           setIsLoading(false);
