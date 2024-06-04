@@ -82,8 +82,8 @@ function OtherBrands({
                 rowData["CurrentStatus"] === "Ongoing" &&
                 rowData["CasinoBrand"] !== "Mirax (FS)" &&
                 rowData["CasinoBrand"] !== "Katsubet (FS)" &&
-                rowData["CasinoBrand"] !== "7Bit (FS)" 
-                // rowData["High_hybrid"] === "1"
+                rowData["CasinoBrand"] !== "7Bit (FS)" &&
+                rowData["High_hybrid"] === "1"
             );
           } else {
             filteredDataOther = responseData.brandsNew.filter(
@@ -92,8 +92,8 @@ function OtherBrands({
                 rowData["CurrentStatus"] === "Ongoing" &&
                 rowData["CasinoBrand"] !== "Mirax (FS)" &&
                 rowData["CasinoBrand"] !== "Katsubet (FS)" &&
-                rowData["CasinoBrand"] !== "7Bit (FS)"
-                // rowData["High_hybrid"] === "1"
+                rowData["CasinoBrand"] !== "7Bit (FS)" &&
+                rowData["High_hybrid"] === "1"
             );
           }
           console.log("EE", filteredDataOther)
