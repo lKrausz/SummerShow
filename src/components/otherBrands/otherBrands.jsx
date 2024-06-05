@@ -97,19 +97,9 @@ function OtherBrands({
             );
           }
           console.log("EE", filteredDataOther)
-          // Перемешиваем данные перед отображением
-          if (isShuffled) {
-            for (let i = filteredDataWithTopData.length - 1; i > 0; i--) {
-              const j = Math.floor(Math.random() * (i + 1));
-              [filteredDataWithTopData[i], filteredDataWithTopData[j]] = [
-                filteredDataWithTopData[j],
-                filteredDataWithTopData[i],
-              ];
-            }
-            setIsShuffled(true);
-          }
+          const arrLength = filteredDataOther.length / 2
 
-          setOtherData(showData(filteredDataOther.slice(8)));
+          setOtherData(showData(filteredDataOther.slice(arrLength)));
           setLoading(false);
 
           // Если нет брендов, вызывать setSelectedCountry

@@ -133,18 +133,9 @@ function TopBrands({
             return !existsInTopData;
           });
 
-          // Перемешиваем данные перед отображением
-          if (!isShuffled) {
-            for (let i = filteredDataWithTopData.length - 1; i > 0; i--) {
-              const j = Math.floor(Math.random() * (i + 1));
-              [filteredDataWithTopData[i], filteredDataWithTopData[j]] = [
-                filteredDataWithTopData[j],
-                filteredDataWithTopData[i],
-              ];
-            }
-            setIsShuffled(true);
-          }
-          setData(showData(filteredDataWithTopData.slice(0,8)));
+          const arrLength = filteredDataWithTopData.length / 2
+
+          setData(showData(filteredDataWithTopData.slice(0, arrLength)));
 
           setTopData([...topData]);
           setIsLoading(false);
