@@ -114,7 +114,6 @@ function AnotherBrands({
   return (
 
     <section id="home" className="hero-section go-zoom-1">
-    <iframe src="https://app.sendx.io/popup/NrZgTplK8BJzqYjxBpl2lQ/subscribe" frameborder="0"></iframe>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-12">
