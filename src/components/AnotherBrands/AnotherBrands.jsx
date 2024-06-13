@@ -114,6 +114,8 @@ function AnotherBrands({
   return (
 
     <section id="home" className="hero-section go-zoom-1">
+      	<div class="sendx-form-7R8A8UTfBfW5r8W4pJJF29"></div>
+
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-12">
